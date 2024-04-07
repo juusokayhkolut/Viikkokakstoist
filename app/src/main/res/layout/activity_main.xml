@@ -11,15 +11,34 @@
         android:background="?attr/colorPrimary"
         app:tabIndicatorColor="@android:color/white"
         app:tabSelectedTextColor="@android:color/white"
-        app:tabTextColor="@android:color/white"
-        app:tabMode="fixed"/>
+        app:tabTextColor="@android:color/white">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_main" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_add" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_all" />
+
+    </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewArea"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_below="@id/tabLayout"
-        android:layout_above="@+id/frameBottom"/>
+        android:layout_above="@id/frameBottom"/>
 
     <FrameLayout
         android:id="@+id/frameBottom"
@@ -30,3 +49,4 @@
     </FrameLayout>
 
 </RelativeLayout>
+

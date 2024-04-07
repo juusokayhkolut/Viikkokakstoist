@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Viikkokakstoist</string>
     <string name="tervetuloa">Tervetuloa!</string>
+    <string name="tab_main">Main Page</string>
+    <string name="tab_add">Add Item</string>
+    <string name="tab_all">All Items</string>
 </resources>

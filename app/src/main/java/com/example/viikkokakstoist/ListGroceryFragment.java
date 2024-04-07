@@ -21,18 +21,15 @@ public class ListGroceryFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_list_grocery, container, false);
 
-        // Initialize RecyclerView
         rvGroceries = view.findViewById(R.id.rvGroceries);
         rvGroceries.setLayoutManager(new LinearLayoutManager(view.getContext()));
 
-        // Initialize the adapter with an empty list or a list from saved state
         adapter = new GroceryListAdapter(ListGrocery.getInstance().getGroceries());
         rvGroceries.setAdapter(adapter);
 
         return view;
     }
 
-    // You might want to create a method to update the list when new data is added
     public void updateGroceryList() {
         adapter.notifyDataSetChanged();
     }

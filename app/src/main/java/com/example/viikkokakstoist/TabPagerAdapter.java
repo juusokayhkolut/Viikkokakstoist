@@ -21,12 +21,12 @@ public class TabPagerAdapter extends FragmentStateAdapter {
             case 2:
                 return new ListGroceryFragment();
             default:
-                return new Fragment(); // default fragment
+                return new Fragment();
         }
     }
 
     @Override
     public int getItemCount() {
-        return 3; // Total number of tabs
+        return 3;
     }
 }

@@ -11,7 +11,6 @@ public class Grocery {
         this.isImportant = isImportant;
     }
 
-    // Getters and Setters
     public String getName() {
         return name;
     }
